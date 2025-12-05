@@ -43,6 +43,8 @@ Step-by-Step Execution:
 
 ### Key Findings: Behavioral Segmentation (Cluster Analysis)
 Based on the clustering results, the algorithm identified four distinct visitor personalities. Here is the interpretation of "who" is visiting the website:
+<img width="561" height="133" alt="image" src="https://github.com/user-attachments/assets/f24a1c9d-a472-4470-86b2-608cf9d16e60" />
+
 #### Cluster 3: "The Ready-to-Buy" (High Value VIPs)
 - Characteristics: 100% add_to_cart rate, highest conversion_rate (42.2%), efficient session duration (~2 minutes).
 - Interpretation: These users arrive with clear purchase intent. They do not wander; they focus, interact efficiently, and proceed to checkout.
@@ -60,6 +62,8 @@ Based on the clustering results, the algorithm identified four distinct visitor 
 
 ### Marketing Attribution & Channel Efficiency Analysis
 By integrating the cluster data with referral sources, we uncovered critical insights regarding traffic quality:
+<img width="509" height="159" alt="image" src="https://github.com/user-attachments/assets/f6b9ecb8-faa9-4336-93a4-9dcfe4fa932f" />
+
 1. The "Identical Quality" Phenomenon (Conversion Rates)
    - Google & Instagram: ~20.29% Conversion Rate (Highest).
    - Paid Ads: ~19.92% Conversion Rate (Lowest).
@@ -86,21 +90,28 @@ Based on the data science analysis, the following strategic actions are recommen
 ### Visual Analytics Guide: Interpreting the Dashboard
 This project includes a suite of visualizations designed to provide evidence-based insights. Here is how to interpret the key charts:
 1. The Heatmap (Behavioral Fingerprint)
+   <img width="884" height="560" alt="image" src="https://github.com/user-attachments/assets/e1265524-e8de-4272-b646-88c7bb3ff2a9" />
+
    - Function: Visualizes the "DNA" of each user segment.
    - How to Read: Look for extreme color contrasts.
        - Observe the time_spent row: Cluster 2 is distinctively dark/intense (avg 438s), visually confirming them as "Deep Researchers."
        - Observe the add_to_cart row: Cluster 3 shows a value of 1.00, mathematically defining them as "The Buyers."
    - Business Value: proves that users are not homogenous. Strategies must be tailored; for example, "Researchers" need information, while "Buyers" need a smooth checkout.
 2. Bar Chart (Conversion Rate per Channel)
+   <img width="957" height="559" alt="image" src="https://github.com/user-attachments/assets/4929781e-a8db-4e3c-b3b0-b1de3f0e3e7b" />
+
    - Function: A report card for marketing channel performance.
    - How to Read: Note that the bar heights are nearly flat/identical (ranging only from 19.9% to 20.3%).
    - Business Value: This "flatness" challenges the assumption that "Ads = Higher Sales." It visually demonstrates that paid strategies are not generating superior traffic compared to organic sources.
 3. Stacked Bar Chart (Segment Composition per Channel)
+   <img width="1033" height="610" alt="image" src="https://github.com/user-attachments/assets/a659a3e6-4df2-44fc-bf4a-6dd0d90691e5" />
+
    - Function: Reveals the "internal makeup" of traffic sources.
    - How to Read: Each bar represents a channel; colors represent the user personas (e.g., Green = Buyer, Blue = Window Shopper).
    - Observation: The proportion of colors is nearly identical across all channels.
    - Business Value: This indicates Broad Targeting. If Instagram Ads were highly targeted, the "Buyer" portion of the Instagram bar should be significantly larger than Google's. The fact that they are equal suggests ads are casting a wide net rather than targeting specific high-intent users.
 4. Scatter Plot (PCA Projection)
+   
    - Function: Mathematical validation of the segmentation.
    - How to Read: A 2D map of 500,000 users. Points of the same color cluster together to form distinct "islands."
    - Business Value: The physical distance between these "islands" represents behavioral differences. If the "Researcher" island is far from the "Buyer" island, it confirms that these groups behave fundamentally differently and require distinct marketing messages (e.g., detailed specs vs. "Buy Now" buttons).
