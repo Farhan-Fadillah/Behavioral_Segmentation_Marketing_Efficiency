@@ -10,12 +10,18 @@ To bridge this gap, this project introduces the Smart E-Commerce Intelligence Sy
 
 ### Technical Methodology
 #### Dataset Description
+
+<img width="1041" height="145" alt="image" src="https://github.com/user-attachments/assets/b047f423-5231-4bd1-862f-f8e6023f8a35" />
+
 The analysis utilizes the digital footprint of 500,000 user sessions, capturing a mix of behavioral and contextual attributes:
 - Behavioral Metrics (Intent Modeling): clicks, page_views, time_spent (engagement duration), and add_to_cart (binary).
 - Contextual Metrics (Attribution): referral_source (Google, Instagram, Ads, Direct, Email) and device_type.
 - Target Variable: conversion_label (Purchase vs. Non-Purchase).
 
 #### Machine Learning Model: K-Means Clustering
+
+<img width="912" height="461" alt="image" src="https://github.com/user-attachments/assets/a0bf88ef-f006-4ce0-b7b5-86f2445a8efb" />
+
 We utilized K-Means Clustering to perform unsupervised discovery of user intent.
 1. Normalization: Data was scaled using a StandardScaler to ensure high-magnitude features (like time_spent) did not bias the distance calculations.
 2. Iterative Grouping: The algorithm mapped users into a high-dimensional feature space, grouping them based on inherent behavioral similarities.
@@ -43,6 +49,7 @@ Step-by-Step Execution:
 
 ### Key Findings: Behavioral Segmentation (Cluster Analysis)
 Based on the clustering results, the algorithm identified four distinct visitor personalities. Here is the interpretation of "who" is visiting the website:
+
 <img width="561" height="133" alt="image" src="https://github.com/user-attachments/assets/f24a1c9d-a472-4470-86b2-608cf9d16e60" />
 
 #### Cluster 3: "The Ready-to-Buy" (High Value VIPs)
@@ -62,6 +69,7 @@ Based on the clustering results, the algorithm identified four distinct visitor 
 
 ### Marketing Attribution & Channel Efficiency Analysis
 By integrating the cluster data with referral sources, we uncovered critical insights regarding traffic quality:
+
 <img width="509" height="159" alt="image" src="https://github.com/user-attachments/assets/f6b9ecb8-faa9-4336-93a4-9dcfe4fa932f" />
 
 1. The "Identical Quality" Phenomenon (Conversion Rates)
@@ -90,6 +98,7 @@ Based on the data science analysis, the following strategic actions are recommen
 ### Visual Analytics Guide: Interpreting the Dashboard
 This project includes a suite of visualizations designed to provide evidence-based insights. Here is how to interpret the key charts:
 1. The Heatmap (Behavioral Fingerprint)
+   
    <img width="884" height="560" alt="image" src="https://github.com/user-attachments/assets/e1265524-e8de-4272-b646-88c7bb3ff2a9" />
 
    - Function: Visualizes the "DNA" of each user segment.
@@ -98,20 +107,24 @@ This project includes a suite of visualizations designed to provide evidence-bas
        - Observe the add_to_cart row: Cluster 3 shows a value of 1.00, mathematically defining them as "The Buyers."
    - Business Value: proves that users are not homogenous. Strategies must be tailored; for example, "Researchers" need information, while "Buyers" need a smooth checkout.
 2. Bar Chart (Conversion Rate per Channel)
+
    <img width="957" height="559" alt="image" src="https://github.com/user-attachments/assets/4929781e-a8db-4e3c-b3b0-b1de3f0e3e7b" />
 
    - Function: A report card for marketing channel performance.
    - How to Read: Note that the bar heights are nearly flat/identical (ranging only from 19.9% to 20.3%).
    - Business Value: This "flatness" challenges the assumption that "Ads = Higher Sales." It visually demonstrates that paid strategies are not generating superior traffic compared to organic sources.
-3. Stacked Bar Chart (Segment Composition per Channel)
+4. Stacked Bar Chart (Segment Composition per Channel)
+
    <img width="1033" height="610" alt="image" src="https://github.com/user-attachments/assets/a659a3e6-4df2-44fc-bf4a-6dd0d90691e5" />
 
    - Function: Reveals the "internal makeup" of traffic sources.
    - How to Read: Each bar represents a channel; colors represent the user personas (e.g., Green = Buyer, Blue = Window Shopper).
    - Observation: The proportion of colors is nearly identical across all channels.
    - Business Value: This indicates Broad Targeting. If Instagram Ads were highly targeted, the "Buyer" portion of the Instagram bar should be significantly larger than Google's. The fact that they are equal suggests ads are casting a wide net rather than targeting specific high-intent users.
-4. Scatter Plot (PCA Projection)
-   
+6. Scatter Plot (PCA Projection)
+
+   <img width="929" height="583" alt="image" src="https://github.com/user-attachments/assets/fae9ed5c-a04b-426f-9d5c-feaf268e6ea7" />
+
    - Function: Mathematical validation of the segmentation.
    - How to Read: A 2D map of 500,000 users. Points of the same color cluster together to form distinct "islands."
    - Business Value: The physical distance between these "islands" represents behavioral differences. If the "Researcher" island is far from the "Buyer" island, it confirms that these groups behave fundamentally differently and require distinct marketing messages (e.g., detailed specs vs. "Buy Now" buttons).
