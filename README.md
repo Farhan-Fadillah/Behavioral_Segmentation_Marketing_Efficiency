@@ -8,7 +8,7 @@ In the hyper-competitive landscape of modern e-commerce, businesses are no longe
 
 A major challenge facing digital businesses today is marketing inefficiency: significant budgets are wasted on driving low-quality traffic, while high-potential visitors are lost due to generic, one-size-fits-all engagement strategies. Despite having access to vast amounts of web traffic data, many companies struggle to answer fundamental questions: "Who are these visitors?" and "What is their true intent?"
 
-![Uploading image.png…]()
+<img width="679" height="356" alt="image" src="https://github.com/user-attachments/assets/fb4ebc71-5915-45ad-b25e-367af57fd43e" />
 
 To bridge this gap, this project introduces the Smart E-Commerce Intelligence System, a machine learning-driven solution designed to dissect user behavior at a granular level. By leveraging unsupervised learning (K-Means Clustering), the system categorizes users into distinct behavioral personas and scientifically evaluates the channels that acquired them. The ultimate goal is to transform raw interaction data into actionable business strategies that maximize conversion rates and optimize Return on Ad Spend (ROAS).
 
